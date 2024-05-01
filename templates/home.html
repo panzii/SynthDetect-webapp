@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/820a0178a4.js"
+        crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOME</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/app.css">
+    </head>
+    <body style="margin-bottom: 170px;">
+
+        <div
+            style="position: sticky; top: 0; z-index: 1000; background-color: #0e1117;">
+            <div
+                style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="margin-top: 20px; margin-left: 150px;">
+                    <img src="static/Synthdetect.png" alt="Logo" class="logo"
+                        width="150" height="36">
+                </div>
+                <div
+                    style="display: flex; align-items: center; justify-content: center; margin-top: 20px; margin-left: 400px; color:#d8d7d7">
+                    <a href="/"
+                        style="margin-right: 20px; color: black; text-decoration:none;font-weight: 500;font-size: 18px;color:#d8d7d7"
+                        onmouseover="this.style.color='#0075ff';"
+                        onmouseout="this.style.color='#d8d7d7'">Info</a>
+                    |
+                    <a href="/demo"
+                        style="margin-left: 20px; color: black; text-decoration:none; font-weight: 500; font-size: 18px;color:#d8d7d7"
+                        onmouseover="this.style.color='#0075ff';"
+                        onmouseout="this.style.color='#d8d7d7'">Demo</a>
+                </div>
+                <div style="flex-grow: 1;"></div>
+                <a href="/team">
+                    <i class="fa-regular fa-address-card"
+                        style="color: #0075ff; margin-right:160px; margin-top: 20px; font-size: 1.5em;"></i>
+                </a>
+            </div>
+            <hr
+                style="margin-left: 150px; margin-right: 150px; margin-top: 8px;color:#ffffff">
+        </div>
+
+        <div
+            style="display: flex; justify-content: center; margin-top: 40px;">
+            <img src="static/banneraiimg.jpg" alt="Banner Image"
+                class="banner-image" width="60%" height="60%">
+        </div>
+
+        <div
+            style="padding-left: 200px; padding-right: 270px; margin-top: 40px; color:#d8d7d7">
+            <h4>Abstract</h4>
+            <p style="font-size: 1.2em;">In the realm of computer vision,
+                discerning
+                between authentic and artificially generated images holds
+                significant importance, especially with the rise of
+                AI-generated
+                content. This project presents a novel approach to address
+                this
+                challenge through the development of a Convolutional Neural
+                Network
+                (CNN)-based image classifier.Leveraging TensorFlow's Keras
+                API,
+                our
+                model achieves high precision and recall, in distinguishing
+                between
+                real and AI-generated images</p>
+        </div>
+
+        <div
+            style="padding-left: 200px; padding-right: 270px; margin-top: 40px;color:#d8d7d7">
+            <h4 style="color:#d8d7d7">Dataset</h4>
+            <ul>
+                <li style="font-size: 1.2em;">The dataset comprised of Real
+                    and
+                    AI Generated Images. Images were collected from Google
+                    using
+                    the python library pygoogle_image. Every single image
+                    was
+                    verified to avoid issues such as incorrect and ambigous
+                    images.</li>
+                <li style="font-size: 1.2em;">CIFAKE: Real and AI-Generated
+                    Synthetic Images</li>
+            </ul>
+
+            <p style="font-size: 1.2em; color:#d8d7d7">Combing the two datasets,
+                we have:</p>
+            <ul>
+                <li style="font-size: 1.2em; color:#d8d7d7">Train Set:
+                    101031</li>
+                <li style="font-size: 1.2em;color:#d8d7d7">Test Set: 20000</li>
+            </ul>
+            <br>
+            <h4 style="color:#d8d7d7">Model</h4>
+            <p style="font-size: 1.2em;color:#d8d7d7">The CNN model was built
+                similar to
+                VGG16 and was trained on the train dataset. The model has a
+                Convolutional Layer, MaxPooling Layer and a Dropout Layer
+                repeated four times with increasing sizes of filters of the
+                Convolutional Layer i.e. 32, 64, 128, and 256. It has 3
+                dense layers. The activation for all the layers is relu
+                except for the last layer, which has activation sigmoid.</p>
+            <br>
+            <h4 style="color:#d8d7d7">Testing and Evaluation</h4>
+            <p style="font-size: 1.2em;color:#d8d7d7">
+
+                On evaluation, model achieved an accuracy of 93.90%
+
+                Classification Report:
+            </p>
+            <img src="static/result.png" alt="Image 1" class="center-image"
+                style="display: flex; justify-content: center; margin-top: 40px;">
+            <br>
+            <img src="static/result2.png" alt="Image 2" class="center-image"
+                style="display: flex; justify-content: center; margin-top: 40px;">
+
+        </div>
+
+        <script src="static/js/app.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
