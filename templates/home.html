@@ -95,14 +95,20 @@
             </ul>
             <br>
             <h4 style="color:#d8d7d7">Model</h4>
-            <p style="font-size: 1.2em;color:#d8d7d7">The CNN model was built
-                similar to
-                VGG16 and was trained on the train dataset. The model has a
-                Convolutional Layer, MaxPooling Layer and a Dropout Layer
-                repeated four times with increasing sizes of filters of the
-                Convolutional Layer i.e. 32, 64, 128, and 256. It has 3
-                dense layers. The activation for all the layers is relu
-                except for the last layer, which has activation sigmoid.</p>
+            <p style="font-size: 1.2em;color:#d8d7d7">The model described is a
+                convolutional neural network (CNN) developed using TensorFlow's
+                Keras API, specifically designed for the binary classification
+                of images into two categories: AI-generated and real images. It
+                features an input layer for 32x32 RGB images, followed by
+                multiple convolutional layers with ReLU activations and max
+                pooling layers to extract and condense features. The network
+                includes a flattening step to transform data for processing by
+                fully connected dense layers, culminating in a sigmoid
+                activation for probabilistic binary classification. The model
+                uses the Adam optimizer and binary crossentropy loss, focusing
+                on accuracy as its performance metric. This setup is optimized
+                to differentiate complex patterns between AI-generated and
+                authentic imagery effectively.</p>
             <br>
             <h4 style="color:#d8d7d7">Testing and Evaluation</h4>
             <p style="font-size: 1.2em;color:#d8d7d7">
@@ -111,11 +117,12 @@
 
                 Classification Report:
             </p>
-            <img src="static/result.png" alt="Image 1" class="center-image"
-                style="display: flex; justify-content: center; margin-top: 40px;">
+            <ul>
+                <li style="font-size: 1.2em;color:#d8d7d7">Precision: 0.92</li>
+                <li style="font-size: 1.2em;color:#d8d7d7">Recall: 0.91</li>
+                <li style="font-size: 1.2em;color:#d8d7d7">Accuracy: 0.91</li>
+            </ul>
             <br>
-            <img src="static/result2.png" alt="Image 2" class="center-image"
-                style="display: flex; justify-content: center; margin-top: 40px;">
 
         </div>
 

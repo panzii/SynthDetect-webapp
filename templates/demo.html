@@ -42,12 +42,30 @@
             </div>
             <hr
                 style="margin-left: 150px; margin-right: 150px; margin-top: 8px;color:#ffffff">
-        </div>
 
-        <script src="static/js/app.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+            <div class="container vh-100 d-flex justify-content-center"
+                style="margin-top: 100px;">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <form action="/upload" method="POST"
+                            enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <input class="form-control" type="file"
+                                    name="image" accept="image/*" required>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Upload
+                                Image</button>
+                        </form>
+
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="static/js/app.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        </body>
+    </html>
